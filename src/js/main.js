@@ -38,6 +38,4 @@ function loadPhotos(el) {
     photoDom.loadIcon.fadeOut();
     return false;
   }
-  
-  
 }
