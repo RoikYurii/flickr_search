@@ -14,7 +14,7 @@ import sass from 'gulp-sass';
 
 
 
-const prodRoot = 'docs/';
+const prodRoot = 'dist/';
 const pugFiles = {
   src: 'src/pug/pages/*.pug',
   watch: 'src/pug/**/*.pug'
