@@ -1,0 +1,21 @@
+{
+  "name": "maklai_test",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "authors": [
+    "Yurii <roikyuriy@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "plugins/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

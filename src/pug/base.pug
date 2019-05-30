@@ -1,0 +1,28 @@
+include bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+include components/head
+include components/header
+include components/topBtn
+//- include components/footer
+
+
+<!DOCTYPE html>
+html(lang="ua")
+    block head 
+      +head()
+    
+    body
+      +b.DIV.wrapper
+        +topBtn()
+        block header
+          +header()
+        block content
+        //- block footer
+          +footer()
+      block vendors
+        script(src="js/vendors.js")
+        
+      block scripts
+        script(src="js/main.js")
+  

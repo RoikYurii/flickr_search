@@ -1,0 +1,105 @@
+.start
+  padding: 10rem 0 10rem 0
+  &__inner
+    display: flex
+    flex-flow: column
+    align-items: center
+  &__img
+    display: block
+    width: 20rem
+    margin-bottom: 5rem
+    svg
+      width: 100%
+  &__form
+    margin: 0 auto
+    display: flex
+    width: 100%
+    border-radius: 10px
+    overflow: hidden
+    @media #{$lg}
+      width: 70%
+    &-item
+      width: 100%
+      position: relative
+    &-icon
+      width: 2rem
+      height: 2rem
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 2rem
+    &-input
+      padding: 1.8rem 2rem 1.8rem 6rem
+      color: $main-color
+      border: none
+      width: 100%
+      background: $light-color
+      font-size: 1.8rem
+      &::placeholder
+        
+        color: $primary-color
+    &-btn
+      width: 14.5rem
+
+.images
+  &__inner
+    display: flex
+    flex-flow: column
+  &__items
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-flow: wrap
+    padding: 0 0 5rem 0
+  .new-image
+    opacity: 0
+  &__item
+    width: 100%  
+    margin-bottom: 2rem
+    position: relative
+    transition: all .5s
+    z-index: 1
+    @media #{$sm}
+      width: 30%
+    @media #{$lg}
+      width: 18%
+    p
+      position: absolute
+      bottom: 105%
+      left: 0%
+      width: 100%
+      font-size: 1.4rem
+      padding: 0.5rem
+      transition: all .3s
+      z-index: 2
+      opacity: 0
+
+      background: #E6ECF2
+    img
+      width: 100%
+    &:hover
+      transform: scale(1.1)
+      p
+        opacity: 1
+  &__loading
+    display: none
+    align-self: center
+    width: 5rem
+    height: 5rem
+    animation: loading 3s
+  &__lazy
+    display: none
+    align-self: center
+    width: 22rem
+    height: 5rem
+    border-radius: 10px
+    margin: 5rem 0 5rem 0
+
+@keyframes loading
+  0%
+    transform: rotateZ(0)
+  100%
+    transform: rotateZ(360deg)
+    
+  
+      
